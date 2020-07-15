@@ -7,8 +7,8 @@ class FoodGrainzApp extends StatelessWidget {
     return MaterialApp(
       title: "FoodGrainz - You Cook, We Deliver",
       theme: ThemeData(
-          primaryColor: Colors.red[500],
-          primaryColorLight: Colors.yellow[300],
+          primaryColor: fromCSSColor("#FF5F05"),
+          primaryColorLight: fromCSSColor("#FFD74B"),
           primaryIconTheme: IconThemeData(color: fromCSSColor("#CC2F2F"))),
       home: HomePage(),
     );
@@ -24,7 +24,9 @@ class HomePage extends StatelessWidget {
           "FoodGrainz",
           style: TextStyle(fontSize: 24, fontFamily: 'DenkOne', shadows: [
             Shadow(
-                color: Colors.grey, blurRadius: 5.0, offset: Offset(5.0, 5.0))
+                color: Colors.black45,
+                blurRadius: 6.0,
+                offset: Offset(5.0, 5.0))
           ]),
         ),
         flexibleSpace: Container(
