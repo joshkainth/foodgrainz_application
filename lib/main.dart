@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:foodgrainz_application/home-page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(FoodGrainzApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -10,8 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-      ),
+      theme: ThemeData(),
       home: null,
     );
   }
