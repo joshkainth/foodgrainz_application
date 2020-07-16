@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodgrainz_application/recipe-screen.dart';
 import 'package:from_css_color/from_css_color.dart';
 
 class FoodGrainzApp extends StatelessWidget {
@@ -10,7 +11,7 @@ class FoodGrainzApp extends StatelessWidget {
           primaryColor: fromCSSColor("#FF5F05"),
           primaryColorLight: fromCSSColor("#FFD74B"),
           primaryIconTheme: IconThemeData(color: fromCSSColor("#CC2F2F"))),
-      home: HomePage(),
+      home: RecipeScreen(),
     );
   }
 }
@@ -58,6 +59,7 @@ class HomePage extends StatelessWidget {
         ],
       ),
       drawer: Drawer(
+        semanticLabel: "Back",
         child: SideNavigationOptions(),
       ),
       body: Center(
@@ -85,16 +87,38 @@ class SideNavigationOptions extends StatelessWidget {
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
-              Text(
-                "username",
-                style: TextStyle(
-                    fontSize: 26, fontFamily: 'DenkOne', color: Colors.white),
+              Container(
+                  alignment: Alignment.topRight,
+                  child: IconButton(
+                    tooltip: "Log in",
+                    icon: Image.asset("assets/iconsImages/login.png"),
+                    onPressed: () {},
+                  )),
+              SizedBox(
+                height: 25,
               ),
-              Text("email address/phone number",
-                  style: TextStyle(
-                      fontSize: 20, fontFamily: 'DenkOne', color: Colors.white))
+              Container(
+                alignment: Alignment.bottomLeft,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: <Widget>[
+                    Text(
+                      "username",
+                      style: TextStyle(
+                          fontSize: 26,
+                          fontFamily: 'DenkOne',
+                          color: Colors.white),
+                    ),
+                    Text("email address/phone number",
+                        style: TextStyle(
+                            fontSize: 20,
+                            fontFamily: 'DenkOne',
+                            color: Colors.white))
+                  ],
+                ),
+              )
             ],
           ),
         ),
