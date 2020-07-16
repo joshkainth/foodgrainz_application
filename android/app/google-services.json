@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "777424433290",
+    "firebase_url": "https://foodgrainz-application.firebaseio.com",
+    "project_id": "foodgrainz-application",
+    "storage_bucket": "foodgrainz-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777424433290:android:5422d219069a81988a3d73",
+        "android_client_info": {
+          "package_name": "com.foodgrainz.foodgrainz_application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777424433290-5n7ooorhkqs4rsqhne29efldcmgf2r1r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnm8Ww1xP0IQjlAiMSlLsl9AME0JOgfYE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777424433290-5n7ooorhkqs4rsqhne29efldcmgf2r1r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
